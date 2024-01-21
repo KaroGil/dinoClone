@@ -1,6 +1,27 @@
+body{
+    background-color: rgb(246, 207, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+#title{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 6, 209);
+    text-shadow: 2px 2px 2px rgb(107, 1, 112);
+    margin-bottom: 20px;
+}
+
+/* Game styling */
 #gameScreen{
     width: 500px;
     height: 200px;
+    border: 2px solid rgb(251, 147, 165);
+    border-radius: 5px;
     background-color: pink;
     overflow: hidden;
 }
@@ -21,7 +42,6 @@
     width: 20px;
     height: 30px;
     background-color: rgb(229, 135, 212);
-    animation: cactusAnimation 3s linear infinite;
 }
 
 @keyframes cactusAnimation{
@@ -50,4 +70,56 @@
     100%{
         top: 150px;
     }
+}
+
+
+/* Description style */
+
+#description{
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size:medium;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+#description:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* settings style */
+
+#settings{
+    font-size:medium;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+}
+
+#restart {
+    background-color: pink;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+    background-color: rgb(255, 6, 209); 
 }
